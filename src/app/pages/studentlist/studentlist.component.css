@@ -1,0 +1,30 @@
+.pages-heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ff4081;
+}
+table {
+  width: 100%;
+  
+}
+.mat-elevation {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+th {
+  font-size: 20px;
+  color: white;
+}
+td {
+  font-size: 18px;
+  font-weight: 600;
+  color: gray;
+}
+table th {
+  background-color: #ff4081;
+}
+table mat-icon{
+  margin-left: 5px;
+  cursor: pointer;
+}
+

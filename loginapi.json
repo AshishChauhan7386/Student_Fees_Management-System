@@ -1,0 +1,450 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "LoginApi": [
+    {
+      "username": "Ashish Chauhan",
+      "email": "chauhanashish7386@gmail.com",
+      "contactNumber": "8433424837",
+      "password": "ashish123",
+      "id": "1"
+    },
+    {
+      "username": "Usha Chauhan",
+      "email": "usha@gmail.com",
+      "contactNumber": "7599471443",
+      "password": "usha123",
+      "id": "2"
+    },
+    {
+      "id": "b371",
+      "username": "Ayush Saxena",
+      "email": "ayush@gmail.com",
+      "contactNumber": "8954748874",
+      "password": "ayush@123"
+    },
+    {
+      "id": "20f7",
+      "username": "Mayank Saxena",
+      "email": "mayank2002@gmail.com",
+      "contactNumber": "8433424837",
+      "password": "mayank2002"
+    },
+    {
+      "id": "3649",
+      "username": "Mohit ",
+      "email": "mohit@gmail.com",
+      "contactNumber": "8456789656",
+      "password": "mohit123"
+    }
+  ],
+  "StudentData": [
+    {
+      "studentDetails": {
+        "studentName": "Ashish Chauhan",
+        "studentID": "ASH84333672",
+        "fatherName": "HarPal Singh Chauhan",
+        "motherName": "Usha Chauhan",
+        "studentcontactnumber": "8433424837",
+        "fathercontactnumber": "7599471443",
+        "aadharcard": "367283185394",
+        "dob": "2000-08-13T18:30:00.000Z",
+        "permanentaddress": "Adarsh Nagar Gali No.03 Civil Line Badaun",
+        "emailid": "chauhanashish7386@gmail.com",
+        "gender": "Male",
+        "category": "General",
+        "nationality": "Indian"
+      },
+      "admissionCourseDetails": {
+        "coursetype": "UnderGraduate",
+        "courseName": "Bachelor of Computer Applications (BCA)",
+        "academicSession": "2024-2027",
+        "courseFees": "35000"
+      },
+      "qualification12thDetails": {
+        "qualification12thYear": 2017,
+        "qualification12thSchoolName": "SK Inter College Badaun (Uttar Pradesh)",
+        "qualification12thPercentage": 62,
+        "qualification12thBoard": "UP Board"
+      },
+      "qualification10thDetails": {
+        "qualification10thYear": 2015,
+        "qualification10thSchoolName": "SK Inter College Badaun (Uttar Pradesh)",
+        "qualification10thPercentage": 64,
+        "qualification10thBoard": "UP Board"
+      },
+      "resgistrationFeesDetails": {
+        "feesType": "No Refundable Amount",
+        "registrationAmount": 1000,
+        "paymentType": "Cash",
+        "transactionReferenceNumber": "cash",
+        "paymentDate": "2023-12-23T18:30:00.000Z",
+        "remark": "Registration Fees"
+      },
+      "feesTransaction": [],
+      "id": "1"
+    },
+    {
+      "studentDetails": {
+        "studentName": "Shobhit Kumar Singh",
+        "fatherName": "Gyanendra Singh",
+        "studentID": "SHO70885248",
+        "motherName": "Munni Devi",
+        "studentcontactnumber": "7088326822",
+        "fathercontactnumber": "8045627894",
+        "aadharcard": "524896301714",
+        "dob": "2000-10-08T18:30:00.000Z",
+        "permanentaddress": "Kumargaon Badaun",
+        "emailid": "shobhit11@gmail.com",
+        "gender": "Male",
+        "category": "General",
+        "nationality": "Indian"
+      },
+      "admissionCourseDetails": {
+        "coursetype": "UnderGraduate",
+        "courseName": "Bachelor of Computer Applications (BCA)",
+        "academicSession": "2024-2027",
+        "courseFees": "35000"
+      },
+      "qualification12thDetails": {
+        "qualification12thYear": 2018,
+        "qualification12thSchoolName": "BPVMIC Badaun",
+        "qualification12thPercentage": 62,
+        "qualification12thBoard": "UP Board"
+      },
+      "qualification10thDetails": {
+        "qualification10thYear": 2016,
+        "qualification10thSchoolName": "BPVMIC Badaun",
+        "qualification10thPercentage": 60,
+        "qualification10thBoard": "UP Board"
+      },
+      "resgistrationFeesDetails": {
+        "feesType": "No Refundable Amount",
+        "registrationAmount": 1000,
+        "paymentType": "Cash",
+        "transactionReferenceNumber": "cash",
+        "paymentDate": "2023-12-23T18:30:00.000Z",
+        "remark": "Registration Fees"
+      },
+      "feesTransaction": [],
+      "id": "2"
+    },
+    {
+      "studentDetails": {
+        "studentName": "lalit Kumar",
+        "fatherName": "Murari Lal",
+        "motherName": "Lata Singh",
+        "studentID": "LAT74852015",
+        "studentcontactnumber": "7485961245",
+        "fathercontactnumber": "8014569875",
+        "aadharcard": "201548796321",
+        "dob": "1999-05-09T18:30:00.000Z",
+        "permanentaddress": "Nekpur Badaun",
+        "emailid": "lali1122t@gmail.com",
+        "gender": "Male",
+        "category": "Obc",
+        "nationality": "Indian"
+      },
+      "admissionCourseDetails": {
+        "coursetype": "UnderGraduate",
+        "courseName": "Bachelor of Computer Applications (BCA)",
+        "academicSession": "2024-2027",
+        "courseFees": "35000"
+      },
+      "qualification12thDetails": {
+        "qualification12thYear": 2015,
+        "qualification12thSchoolName": "Shiv Devi SChool Badaun",
+        "qualification12thPercentage": 52,
+        "qualification12thBoard": "UP Board"
+      },
+      "qualification10thDetails": {
+        "qualification10thYear": 2013,
+        "qualification10thSchoolName": "Mohan Singh School Badaun",
+        "qualification10thPercentage": 65,
+        "qualification10thBoard": "UP Board"
+      },
+      "resgistrationFeesDetails": {
+        "feesType": "No Refundable Amount",
+        "registrationAmount": 1000,
+        "paymentType": "Paytm(UPI)",
+        "transactionReferenceNumber": "21000458701",
+        "paymentDate": "2023-12-23T18:30:00.000Z",
+        "remark": "Registration Fees"
+      },
+      "feesTransaction": [],
+      "id": "3"
+    },
+    {
+      "studentDetails": {
+        "studentName": "Sumit kashyap",
+        "fatherName": "Naresh Pal",
+        "motherName": "Gayatri Devi",
+        "studentcontactnumber": "8445201144",
+        "fathercontactnumber": "7589632147",
+        "aadharcard": "425896301456",
+        "dob": "1998-06-08T18:30:00.000Z",
+        "permanentaddress": "Adarsh Nagar Gali No.03 Civil Line Badaun",
+        "emailid": "sumitku19@gmail.com",
+        "gender": "Male",
+        "category": "Obc",
+        "nationality": "Indian",
+        "studentID": "SUM84454258"
+      },
+      "admissionCourseDetails": {
+        "coursetype": "UnderGraduate",
+        "courseName": "Bachelor of Computer Applications (BCA)",
+        "academicSession": "2024-2027",
+        "courseFees": "35000"
+      },
+      "qualification12thDetails": {
+        "qualification12thYear": 2016,
+        "qualification12thSchoolName": "BPVMIC Badaun",
+        "qualification12thPercentage": 60,
+        "qualification12thBoard": "UP Board"
+      },
+      "qualification10thDetails": {
+        "qualification10thYear": 2014,
+        "qualification10thSchoolName": "BPVMIC Badaun",
+        "qualification10thPercentage": 62.98,
+        "qualification10thBoard": "UP Board"
+      },
+      "resgistrationFeesDetails": {
+        "feesType": "No Refundable Amount",
+        "registrationAmount": 1000,
+        "paymentType": "Cash",
+        "transactionReferenceNumber": "cash",
+        "paymentDate": "2023-12-23T18:30:00.000Z",
+        "remark": "Registration Fees"
+      },
+      "feesTransaction": [],
+      "id": "4"
+    },
+    {
+      "studentDetails": {
+        "studentName": "Ankit Chauhan",
+        "fatherName": "Harpal Singh Chauhan",
+        "motherName": "Usha Chauhan",
+        "studentcontactnumber": "9717201841",
+        "fathercontactnumber": "7599471443",
+        "aadharcard": "524178962145",
+        "dob": "2000-12-30T18:30:00.000Z",
+        "permanentaddress": "Adarsh Nagar Gali No.03 Civil Line Badaun",
+        "emailid": "ankit9717@gmail.com",
+        "gender": "Male",
+        "category": "General",
+        "nationality": "Indian",
+        "studentID": "ANK97175241"
+      },
+      "admissionCourseDetails": {
+        "coursetype": "UnderGraduate",
+        "courseName": "Bachelor of Computer Applications (BCA)",
+        "academicSession": "2024-2027",
+        "courseFees": "35000"
+      },
+      "qualification12thDetails": {
+        "qualification12thYear": 2016,
+        "qualification12thSchoolName": "SK Inter College Badaun",
+        "qualification12thPercentage": 70,
+        "qualification12thBoard": "UP Board"
+      },
+      "qualification10thDetails": {
+        "qualification10thYear": 2014,
+        "qualification10thSchoolName": "SK Inter College Badaun",
+        "qualification10thPercentage": 72,
+        "qualification10thBoard": "UP Board"
+      },
+      "resgistrationFeesDetails": {
+        "feesType": "No Refundable Amount",
+        "registrationAmount": 1000,
+        "paymentType": "Paytm(UPI)",
+        "transactionReferenceNumber": "52453621458",
+        "paymentDate": "2023-12-23T18:30:00.000Z",
+        "remark": "Registration Fees"
+      },
+      "feesTransaction": [],
+      "id": "5"
+    },
+    {
+      "studentDetails": {
+        "studentName": "Mayank Saxena ",
+        "fatherName": "Arvind Saxena",
+        "motherName": "Veena Saxena",
+        "studentcontactnumber": "8541796324",
+        "fathercontactnumber": "7041568920",
+        "aadharcard": "417896325425",
+        "dob": "2000-02-07T18:30:00.000Z",
+        "permanentaddress": "Adarsh Nagar Gali No.03 Civil Line Badaun",
+        "emailid": "mayank12@gmail.com",
+        "gender": "Male",
+        "category": "General",
+        "nationality": "Indian",
+        "studentID": "MAY85414178"
+      },
+      "admissionCourseDetails": {
+        "coursetype": "UnderGraduate",
+        "courseName": "Bachelor of Business Administration (BBA)",
+        "academicSession": "2024-2027",
+        "courseFees": "30000"
+      },
+      "qualification12thDetails": {
+        "qualification12thYear": 2021,
+        "qualification12thSchoolName": "Shiv Devi School Badaun",
+        "qualification12thPercentage": 59.12,
+        "qualification12thBoard": "UP Board"
+      },
+      "qualification10thDetails": {
+        "qualification10thYear": 2019,
+        "qualification10thSchoolName": "BPVMIC Badaun",
+        "qualification10thPercentage": 66.66,
+        "qualification10thBoard": "UP Board"
+      },
+      "resgistrationFeesDetails": {
+        "feesType": "No Refundable Amount",
+        "registrationAmount": 1000,
+        "paymentType": "Cash",
+        "transactionReferenceNumber": "cash",
+        "paymentDate": "2023-12-23T18:30:00.000Z",
+        "remark": "Registration Fees"
+      },
+      "feesTransaction": [],
+      "id": "6"
+    }
+  ],
+  "StudentFeesDetails": [
+    {
+      "studentId": "ASH84333672",
+      "feesAmount": 20000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-25T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi41756940",
+      "id": "1"
+    },
+    {
+      "studentId": "SHO70885248",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-25T18:30:00.000Z",
+      "remark": "AcademicFees",
+      "clgTransactionID": "acmi82135112",
+      "id": "2"
+    },
+    {
+      "studentId": "ASH84333672",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-25T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi65695254",
+      "id": "3"
+    },
+    {
+      "studentId": "ASH84333672",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-25T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi18768752",
+      "id": "4"
+    },
+    {
+      "studentId": "LAT74852015",
+      "feesAmount": 2000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi22990294",
+      "id": "5"
+    },
+    {
+      "studentId": "LAT74852015",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi85836933",
+      "id": "6"
+    },
+    {
+      "studentId": "LAT74852015",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi62979297",
+      "id": "7"
+    },
+    {
+      "studentId": "LAT74852015",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi59453925",
+      "id": "8"
+    },
+    {
+      "studentId": "LAT74852015",
+      "feesAmount": 3000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi75455458",
+      "id": "9"
+    },
+    {
+      "studentId": "ASH84333672",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi11295874",
+      "id": "10"
+    },
+    {
+      "studentId": "LAT74852015",
+      "feesAmount": 5000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi41115594",
+      "id": "11"
+    },
+    {
+      "studentId": "LAT74852015",
+      "feesAmount": 2000,
+      "paymentType": "Cash",
+      "transactionReferenceNumber": "cash",
+      "paymentDate": "2023-12-26T18:30:00.000Z",
+      "remark": "Academic Fees",
+      "clgTransactionID": "acmi77316179",
+      "id": "13"
+    }
+  ]
+}

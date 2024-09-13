@@ -1,0 +1,52 @@
+.pages-heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ff4081;
+ 
+}
+.pages-heading1 {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ff4081;
+  text-align: center;
+ 
+}
+
+mat-form-field{
+  width: 30%;
+  padding-left: 10px;
+
+}
+.personaldetails{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.coursetype{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.inter{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.highschool{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.registrationfees{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.btn{
+  display: flex;
+  justify-content: end;
+}
+.form{
+  padding-bottom: 50px;
+  padding-top: 50px;
+}

@@ -1,0 +1,220 @@
+<div class="popup-container">
+  <div class="top-main" mat-dialog-content>
+    <div class="admmisionform-logo">ACMI</div>
+    <div class="admmisionform-session">
+      Session: {{ data.admissionCourseDetails.academicSession }}
+    </div>
+  </div>
+  <div class="admmisionform">Student Admission Form</div>
+  <div class="main">
+    <div class="heading">Student Details</div>
+
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <td><b>Student ID: </b>{{ data.studentDetails.studentID }}</td>
+          <td>
+            <b>Student Name: </b>
+            {{ data.studentDetails.studentName | uppercase }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Father Name: </b>
+            {{ data.studentDetails.fatherName | uppercase }}
+          </td>
+          <td>
+            <b>Mother Name: </b>
+            {{ data.studentDetails.motherName | uppercase }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Student Contact Number: </b>
+            {{ data.studentDetails.studentcontactnumber }}
+          </td>
+          <td>
+            <b>Father Contact Number </b>
+            {{ data.studentDetails.fathercontactnumber }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Aadhar Card number: </b> {{ data.studentDetails.aadharcard }}
+          </td>
+          <td>
+            <b>Date Of Birth (DOB): </b>
+            {{ data.studentDetails.dob | date : "dd/MM/yyyy" }}
+          </td>
+        </tr>
+        <tr>
+          <td><b>E-Mail ID: </b> {{ data.studentDetails.emailid }}</td>
+          <td><b>Gender: </b> {{ data.studentDetails.gender | uppercase }}</td>
+        </tr>
+        <tr>
+          <td>
+            <b>Category: </b> {{ data.studentDetails.category | uppercase }}
+          </td>
+          <td>
+            <b>Nationality: </b>
+            {{ data.studentDetails.nationality | uppercase }}
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" style="height: auto">
+            <b>Address: </b>
+            {{ data.studentDetails.permanentaddress | uppercase }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="heading">Course Details</div>
+
+    <table class="table table-bordered">
+      <tbody>
+        <tr>
+          <td>
+            <b>Course Type : </b
+            >{{ data.admissionCourseDetails.coursetype | uppercase }}
+          </td>
+          <td>
+            <b>Course Name: </b
+            >{{ data.admissionCourseDetails.courseName | uppercase }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Academic Session: </b
+            >{{ data.admissionCourseDetails.academicSession }}
+          </td>
+          <td>
+            <b>Course Fees: </b
+            >{{ data.admissionCourseDetails.courseFees | currency : "INR" }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="heading">Qualifications</div>
+
+    <table class="table table-bordered">
+      <tbody>
+        <div class="heading-12">12th Qualifications</div>
+        <tr>
+          <td>
+            <b>Year</b> :
+            {{ data.qualification12thDetails.qualification12thYear }}
+          </td>
+          <td>
+            <b
+              >School Name:
+              
+            </b>
+            {{
+              data.qualification12thDetails.qualification12thSchoolName
+                | uppercase
+            }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Percentage: </b>
+            {{
+              data.qualification12thDetails.qualification12thPercentage
+            }}&#x25;
+          </td>
+          <td>
+            <b>Board: </b>
+            {{
+              data.qualification12thDetails.qualification12thBoard | uppercase
+            }}
+          </td>
+        </tr>
+        <div class="heading-10">10th Qualifications</div>
+        <tr>
+          <td>
+            <b>Year: </b>
+            {{ data.qualification10thDetails.qualification10thYear }}
+          </td>
+          <td>
+            <b>School Name: </b>
+            {{
+              data.qualification10thDetails.qualification10thSchoolName
+                | uppercase
+            }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <b>Percentage: </b>
+            {{
+              data.qualification10thDetails.qualification10thPercentage
+            }}&#x25;
+          </td>
+          <td>
+            <b>Board: </b>
+            {{
+              data.qualification10thDetails.qualification10thBoard | uppercase
+            }}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div #content>
+      <div class="heading">Registration Fees Details</div>
+
+      <table class="table table-bordered">
+        <tbody>
+          <tr>
+            <td>
+              <b>Fees Type : </b
+              >{{ data.resgistrationFeesDetails.feesType | uppercase }}
+            </td>
+            <td>
+              <b>Registration Amount: </b>
+              {{
+                data.resgistrationFeesDetails.registrationAmount
+                  | currency : "INR"
+              }}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Payment Type: </b>
+              {{ data.resgistrationFeesDetails.paymentType | uppercase }}
+            </td>
+            <td>
+              <b>Transaction Reference Number: </b>
+              {{ data.resgistrationFeesDetails.transactionReferenceNumber }}
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <b>Payment Date: </b>
+              {{
+                data.resgistrationFeesDetails.paymentDate | date : "dd/MM/yyyy"
+              }}
+            </td>
+            <td>
+              <b>Remark: </b>
+              {{ data.resgistrationFeesDetails.remark | uppercase }}
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+ <!-- <div class="btn" mat-dialog-actions>
+  <span  mat-dialog-close
+    >Close<mat-icon class="mat-18">close</mat-icon></span
+  >
+</div> -->
+
+
+<div class="btn" mat-dialog-actions>
+  <span mat-dialog-close><b>Close</b></span>
+</div>

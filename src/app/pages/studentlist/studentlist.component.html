@@ -1,0 +1,56 @@
+<div class="pages-heading">Student List</div>
+
+<div class="mat-elevation">
+  <table mat-table [dataSource]="dataSource">
+  
+    <ng-container matColumnDef="position">
+      <th mat-header-cell *matHeaderCellDef>S.No.</th>
+      <td mat-cell *matCellDef="let element; let i = index">{{ i + 1 }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="StudentName">
+      <th mat-header-cell *matHeaderCellDef>Student Name</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.studentDetails.studentName | uppercase }}
+      </td>
+    </ng-container>
+
+   
+    <ng-container matColumnDef="StudentID">
+      <th mat-header-cell *matHeaderCellDef>StudentID</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.studentDetails.studentID }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Course">
+      <th mat-header-cell *matHeaderCellDef>StudentCourse</th>
+      <td mat-cell *matCellDef="let element">
+        {{ element.admissionCourseDetails.courseName }}
+      </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Action">
+      <th mat-header-cell *matHeaderCellDef>Action</th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon color="warn" (click)="viewstudent(element)"
+          >visibility</mat-icon
+        >
+
+        <mat-icon color="warn">edit</mat-icon>
+
+        <mat-icon color="warn">delete</mat-icon>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+
+  <mat-paginator
+    [pageSizeOptions]="[10, 20, 30]"
+    showFirstLastButtons
+    aria-label="Select page of periodic elements"
+  >
+  </mat-paginator>
+</div>

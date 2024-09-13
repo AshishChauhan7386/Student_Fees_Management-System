@@ -1,0 +1,68 @@
+<div class="pages-heading">
+  View Receipt
+
+</div>
+
+
+
+<div class="findid">
+
+  <mat-form-field appearance="outline" class="idfield" color="accent">
+    <mat-label>Student ID And Transaction ID</mat-label>
+    <input matInput placeholder="Student ID And Transaction ID" [(ngModel)]="studentfees">
+    <mat-icon matSuffix color="accent">account_circle</mat-icon>
+
+  </mat-form-field>
+
+  <div>
+    <button mat-raised-button color="accent" (click)="getStudentFees()">View Receipt</button>
+  </div>
+</div>
+<div *ngIf="studentFeesDetails && studentFeesDetails.length > 0; ">
+  <div *ngFor="let detail of studentFeesDetails;  let i = index">
+
+    <div class="recipetnumber">
+      <p>Receipt {{i+1}}</p>
+      <table class="table table-bordered">
+        <tbody>
+
+          <tr>
+            <td>
+              <b>Student ID : </b>{{ detail.studentId }}
+            </td>
+            <td>
+              <b>Fees Amount : </b>{{ detail.feesAmount | currency : "INR" }}
+            </td>
+
+          </tr>
+
+          <tr>
+            <td>
+              <b>Payment Type : </b>{{ detail.paymentType }}
+            </td>
+            <td>
+              <b>Transaction Reference Number : </b>{{ detail.transactionReferenceNumber }}
+            </td>
+
+          </tr>
+
+
+          <tr>
+            <td>
+              <b>Payment Date : </b>{{ detail.paymentDate | date : "dd/MM/yyyy" }}
+            </td>
+            <td>
+              <b>College Transaction ID : </b>{{ detail.clgTransactionID }}
+            </td>
+
+          </tr>
+
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="Nodata" *ngIf=noData>
+  <p>No data available</p>
+</div>

@@ -1,0 +1,71 @@
+.pages-heading {
+  font-size: 25px;
+  font-weight: 500;
+  color: #ff4081;
+}
+.findid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.idfield {
+  width: 85%;
+  margin-top: 30px;
+}
+.findid button {
+  margin-left: 20px;
+}
+td {
+  font-weight: 500;
+}
+td b {
+  font-weight: 700;
+}
+
+.txt-center {
+  text-align: center;
+}
+.border- {
+  border: 1px solid #000 !important;
+}
+.padding {
+  padding: 15px;
+}
+.mar-bot {
+  margin-bottom: 15px;
+}
+
+.BoxA h5,
+.BoxA p {
+  margin: 0;
+}
+h5 {
+  text-transform: uppercase;
+}
+
+.table-bordered td,
+.table-bordered th,
+.table thead th {
+  border: 1px solid #000000 !important;
+}
+td {
+  padding: 10px;
+  font-size: 15px;
+}
+table {
+  width: 100%;
+}
+
+.registrationfees {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.registrationfees mat-form-field {
+  width: 30%;
+}
+.btn{
+  float: right;
+  
+}

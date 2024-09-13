@@ -1,0 +1,352 @@
+<div class="pages-heading">Admission Form</div>
+<br />
+
+<div class="form">
+  <form [formGroup]="admissionForm">
+    <div class="pages-heading1">Student Details</div>
+    <br />
+    <div class="personaldetails" formGroupName="studentDetails">
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Student Name</strong></mat-label>
+        <input
+          matInput
+          placeholder="Student Name"
+          formControlName="studentName"
+        />
+
+        <mat-icon matSuffix color="accent">person</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Father Name</strong></mat-label>
+        <input
+          matInput
+          placeholder="Father Name"
+          formControlName="fatherName"
+        />
+
+        <mat-icon matSuffix color="accent">person</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Mother Name</strong></mat-label>
+        <input
+          matInput
+          placeholder="Mother Name"
+          formControlName="motherName"
+        />
+        <mat-icon matSuffix color="accent">person</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Student Contact Number</strong></mat-label>
+        <input
+          matInput
+          placeholder="Student Contact Number"
+          formControlName="studentcontactnumber"
+        />
+        <mat-icon matSuffix color="accent">phone</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Father Contact Number</strong></mat-label>
+        <input
+          matInput
+          placeholder="Father Contact Number"
+          formControlName="fathercontactnumber"
+        />
+        <mat-icon matSuffix color="accent">phone</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Aadhar Card Number</strong></mat-label>
+        <input
+          matInput
+          placeholder="Aadhar Card Number"
+          formControlName="aadharcard"
+        />
+        <mat-icon matSuffix color="accent">description</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Date Of Birth</strong></mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="dob" />
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Permanent Address</strong></mat-label>
+        <input
+          matInput
+          placeholder="Permanent Address"
+          formControlName="permanentaddress"
+        />
+        <mat-icon matSuffix color="accent">location_on</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>E-Mail Id</strong></mat-label>
+        <input matInput placeholder="E-Mail Id" formControlName="emailid" />
+
+        <mat-icon matSuffix color="accent">email</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Gender</strong></mat-label>
+        <mat-select name="gender" formControlName="gender">
+          <mat-option value="Male">Male</mat-option>
+          <mat-option value="Female">Female</mat-option>
+          <mat-option value="Other">Other </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Category</strong></mat-label>
+        <mat-select name="category" formControlName="category">
+          <mat-option value="General">General</mat-option>
+          <mat-option value="Obc">OBC (Other Backward Classes)</mat-option>
+          <mat-option value="Sc">SC (Scheduled Caste)</mat-option>
+          <mat-option value="St">ST (Scheduled Tribe)</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Select Nationality</strong></mat-label>
+        <mat-select name="nationality" formControlName="nationality">
+          <mat-option value="Indian">Indian</mat-option>
+          <mat-option value="Other">Other</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="pages-heading1">Course Admission</div>
+    <br />
+    <div class="coursetype" formGroupName="admissionCourseDetails">
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Course Type</strong></mat-label>
+        <input
+          matInput
+          formControlName="coursetype"
+          value="UnderGraduate"
+          [attr.disabled]="true"
+          readonly
+        />
+
+        <mat-icon matSuffix color="accent">school</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Course Name</strong></mat-label>
+        <mat-select name="food" formControlName="courseName">
+          <mat-option *ngFor="let food of UGcourse" [value]="food.value">{{
+            food.viewValue
+          }}</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Session</strong></mat-label>
+        <mat-select name="session" formControlName="academicSession">
+          <mat-option value="2024-2027">2024-2027</mat-option>
+          <mat-option value="2025-2028">2025-2028</mat-option>
+          <mat-option value="2024-2027">2026-2029</mat-option>
+          <mat-option value="2025-2028">2027-2030</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Course Fees</strong></mat-label>
+        <input
+          matInput
+          placeholder="Course Fees"
+          formControlName="courseFees"
+        />
+        <mat-icon matSuffix color="accent">attach_money</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="pages-heading1">Qualification 12th</div>
+    <br />
+
+    <div class="inter" formGroupName="qualification12thDetails">
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>12th Qualification Year</strong></mat-label>
+        <input
+          matInput
+          type="number"
+          placeholder="Qualification Year"
+          formControlName="qualification12thYear"
+        />
+        <mat-icon matSuffix color="accent">date_range</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>12th School Name</strong></mat-label>
+        <input
+          matInput
+          placeholder="School Name"
+          formControlName="qualification12thSchoolName"
+        />
+        <mat-icon matSuffix color="accent">school</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>12th Percentage</strong></mat-label>
+        <input
+          matInput
+          type="number"
+          placeholder="Percentage"
+          formControlName="qualification12thPercentage"
+        />
+        <mat-icon matSuffix color="accent">percent</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>12th Board </strong></mat-label>
+        <input
+          matInput
+          placeholder="12th Board "
+          formControlName="qualification12thBoard"
+        />
+        <mat-icon matSuffix color="accent">school</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="pages-heading1">Qualification 10th</div>
+    <br />
+    <div class="highschool" formGroupName="qualification10thDetails">
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>10th Qualification Year</strong></mat-label>
+        <input
+          matInput
+          type="number"
+          placeholder="Qualification Year"
+          formControlName="qualification10thYear"
+        />
+        <mat-icon matSuffix color="accent">date_range</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>10th School Name</strong></mat-label>
+        <input
+          matInput
+          placeholder="School Name"
+          formControlName="qualification10thSchoolName"
+        />
+        <mat-icon matSuffix color="accent">school</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>10th Percentage</strong></mat-label>
+        <input
+          matInput
+          type="number"
+          placeholder="Percentage"
+          formControlName="qualification10thPercentage"
+        />
+        <mat-icon matSuffix color="accent">percent</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>10th Board </strong></mat-label>
+        <input
+          matInput
+          placeholder="10th Board "
+          formControlName="qualification10thBoard"
+        />
+        <mat-icon matSuffix color="accent">school</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="pages-heading1">Regitration Fees</div>
+    <br />
+    <div class="registrationfees" formGroupName="resgistrationFeesDetails">
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Fees Type</strong></mat-label>
+        <mat-select name="fees type" formControlName="feesType" readonly>
+         
+          <mat-option value="No Refundable Amount"
+            >No Refundable Amount</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Registration Amount</strong></mat-label>
+        <input
+          matInput
+          type="number"
+          placeholder="Registration Amount"
+          formControlName="registrationAmount"
+        />
+        <mat-icon matSuffix color="accent">attach_money</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Payement Type</strong></mat-label>
+        <mat-select name="payment type" formControlName="paymentType">
+          <mat-option value="Cash">cash</mat-option>
+          <mat-option value="Bank Transfer">Bank Transfer</mat-option>
+          <mat-option value="Debit Card">Debit Card</mat-option>
+          <mat-option value="Credit Card">Credit Card</mat-option>
+          <mat-option value="PhonePe(UPI)">PhonePe(UPI)</mat-option>
+          <mat-option value="Paytm(UPI)">Paytm(UPI)</mat-option>
+          <mat-option value="GPay(UPI)">GPay(UPI)</mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Transaction Reference Number</strong></mat-label>
+        <input
+          matInput
+          placeholder="Transaction Reference Number"
+          formControlName="transactionReferenceNumber"
+        />
+        <mat-icon matSuffix color="accent">receipt</mat-icon>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent">
+        <mat-label><strong>Payment Date</strong></mat-label>
+        <input
+          matInput
+          [matDatepicker]="paymentPicker"
+          placeholder="Payment Date"
+          formControlName="paymentDate"
+        />
+        <mat-datepicker-toggle
+          matSuffix
+          [for]="paymentPicker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #paymentPicker color="accent"></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline" class="input" color="accent" 
+      >
+        <mat-label><strong>Remark</strong></mat-label>
+        <input
+          matInput
+          placeholder="RegistrationFees,AcademicFeesetc."
+          formControlName="remark"
+        />
+        <mat-icon matSuffix color="accent">receipt</mat-icon>
+      </mat-form-field>
+    </div>
+    <br />
+    &nbsp; &nbsp;
+    <div class="btn">
+      <button
+        mat-raised-button
+        type="submit"
+        (click)="onSubmit()"
+        color="primary"
+      >
+        <mat-icon>done</mat-icon>
+
+        Submit Form
+      </button>
+    </div>
+  </form>
+</div>
+
+

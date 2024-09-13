@@ -1,0 +1,76 @@
+
+
+
+<!-- header -->
+<mat-toolbar color="primary">
+  <div *ngIf="btn2">
+    <button
+      (click)="drawer.toggle()"
+      mat-icon-button
+      class="example-icon"
+      aria-label="Example icon-button with menu icon"
+    >
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+  <span class="example-spacer">ACMI</span>
+
+  <div *ngIf="btn" class="admin-info" (click)="admindetails()">
+    <mat-icon class="admin-icon">person</mat-icon>
+    <span class="admin-text">Admin</span>
+  </div>
+</mat-toolbar>
+
+<!-- sidenav -->
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer
+    #drawer
+    class="example-sidenav"
+    mode="side"
+    *ngIf="sidenav"
+    opened
+  >
+    <mat-nav-list>
+      <div class="linkssidenav">
+        <a routerLink="/Dashboard" [routerLinkActive]="['active-link']">
+          <strong class="sidenavlinks" [class.active]="isActive('/Dashboard')">
+            <mat-icon>dashboard</mat-icon>&nbsp; Dashboard
+          </strong>
+        </a>
+        <a routerLink="/Admission" [routerLinkActive]="['active-link']">
+          <strong class="sidenavlinks" [class.active]="isActive('/Admission')">
+            <mat-icon>school</mat-icon>&nbsp; Admission
+          </strong>
+        </a>
+        <a routerLink="/FeesDeposit" [routerLinkActive]="['active-link']">
+          <strong class="sidenavlinks" [class.active]="isActive('/FeesDeposit')">
+            <mat-icon>payment</mat-icon>&nbsp; FeesDeposit
+          </strong>
+        </a>
+        <a routerLink="/StudentList" [routerLinkActive]="['active-link']">
+          <strong class="sidenavlinks" [class.active]="isActive('/StudentList')">
+            <mat-icon>group</mat-icon>&nbsp; StudentList
+          </strong>
+        </a>
+        <a routerLink="/RecieptDownload" [routerLinkActive]="['active-link']">
+          <strong class="sidenavlinks" [class.active]="isActive('/RecieptDownload')">
+            <mat-icon>receipt</mat-icon>&nbsp;View Receipt
+          </strong>
+        </a>
+      </div>
+
+      <div *ngIf="btn" class="logout-btn">
+        <button mat-raised-button color="warn" (click)="LogOut()">
+          <mat-icon>logout</mat-icon>LogOut
+        </button>
+      </div>
+    </mat-nav-list>
+  </mat-drawer>
+
+  <mat-drawer-content>
+    <div class="outlet">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
+

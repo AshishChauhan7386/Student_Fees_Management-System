@@ -1,0 +1,144 @@
+<div class="pages-heading">
+ Fees Deposit
+</div>
+
+<div class="findid">
+  
+<mat-form-field appearance="outline" class="idfield" color="accent">
+    <mat-label>Student ID</mat-label>
+    <input matInput placeholder="Student ID" [(ngModel)]="studentId">
+    <mat-icon matSuffix color="accent">account_circle</mat-icon>
+   
+  </mat-form-field>
+
+<div>
+  <button mat-raised-button color="accent" (click)="getStudentDetails()">Find Details</button>
+</div>
+</div>
+
+
+
+<div class="submitfees" *ngIf="tabledata">
+<table class="table table-bordered" >
+  <tbody>
+    <tr>
+      <td>
+        <b>Student Name : </b
+        >{{ studentDetails.studentDetails.studentName | uppercase }}
+      </td>
+      <td>
+        <b>Father Name: </b
+        >{{ studentDetails.studentDetails.fatherName | uppercase }}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>CourseName: </b
+        >{{ studentDetails.admissionCourseDetails.courseName }}
+      </td>
+      <td>
+        <b>Admission Fees: </b
+        >{{ studentDetails.admissionCourseDetails.courseFees | currency : "INR" }}
+      </td>
+
+    </tr>
+
+
+    <tr>
+      <td>
+        <b>Total Submit Amount: </b
+        >{{ TotalFees | currency : "INR" }}
+      </td>
+      <td>
+        <b>Total Pending Amount: </b
+        >{{ TotalPendingFess  | currency : "INR" }}
+      </td>
+
+    </tr>
+    
+  </tbody>
+</table> 
+
+
+<form [formGroup]="feesForm" (ngSubmit)="submitFees()">
+
+
+<div class="registrationfees" >
+ 
+  <mat-form-field appearance="outline" class="input" color="accent">
+    <mat-label><strong>Student ID</strong></mat-label>
+    <mat-select name="Student ID" formControlName="studentID">
+     
+      <mat-option value="{{studentDetails.studentDetails.studentID}}"  selected readonly
+        >{{studentDetails.studentDetails.studentID}}</mat-option
+      >
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="input" color="accent">
+    <mat-label><strong>Fees Amount</strong></mat-label>
+    <input
+      matInput
+      type="number"
+      placeholder="Fees Amount"
+  formControlName="feesAmount"
+    />
+    <mat-icon matSuffix color="accent">attach_money</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="input" color="accent">
+    <mat-label><strong>Payement Type</strong></mat-label>
+    <mat-select name="payment type"   formControlName="paymentType">
+      <mat-option value="Cash">cash</mat-option>
+      <mat-option value="Bank Transfer">Bank Transfer</mat-option>
+      <mat-option value="Debit Card">Debit Card</mat-option>
+      <mat-option value="Credit Card">Credit Card</mat-option>
+      <mat-option value="PhonePe(UPI)">PhonePe(UPI)</mat-option>
+      <mat-option value="Paytm(UPI)">Paytm(UPI)</mat-option>
+      <mat-option value="GPay(UPI)">GPay(UPI)</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="input" color="accent">
+    <mat-label><strong>Transaction Reference Number</strong></mat-label>
+    <input
+      matInput
+      placeholder="Transaction Reference Number"
+      formControlName="transactionReferenceNumber"
+    />
+    <mat-icon matSuffix color="accent">receipt</mat-icon>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="input" color="accent">
+    <mat-label><strong>Payment Date</strong></mat-label>
+    <input
+      matInput
+      [matDatepicker]="paymentPicker"
+      placeholder="Payment Date"
+     formControlName="paymentDate"
+    />
+    <mat-datepicker-toggle
+      matSuffix
+      [for]="paymentPicker"
+    ></mat-datepicker-toggle>
+    <mat-datepicker #paymentPicker color="accent"></mat-datepicker>
+  </mat-form-field>
+
+  <mat-form-field appearance="outline" class="input" color="accent">
+    <mat-label><strong>Remark</strong></mat-label>
+    <input
+      matInput
+      value="Academic Fees"
+      placeholder="AcademicFees."
+   formControlName="remark"
+   
+    />
+    <mat-icon matSuffix color="accent">receipt</mat-icon>
+  </mat-form-field>
+</div>
+
+<div class="btn">
+  <button mat-raised-button color="primary"><mat-icon>attach_money</mat-icon>Fees Submit</button>
+</div>
+</form>
+</div>

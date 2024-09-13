@@ -1,0 +1,42 @@
+.main {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 600;
+  color: #ff4081;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+mat-form-field {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 15px;
+}
+
+.links {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  color: #ff4081;
+  font-size: 20px;
+  font-weight: 400;
+  padding-left: 260px;
+  padding-right: 260px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #ff4081;
+  font-weight: 400;
+}
